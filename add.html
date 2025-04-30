@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medical Registration Form</title>
+  <link rel="stylesheet" href="io.css" />
+</head>
+<body>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        background-image: url(back.jpg);
+        margin: 0;
+
+        padding: 20px;
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+      }
+      
+      .registered-members, .registration-form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 45%;
+      }
+      
+      h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+      
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      button {
+        background-color: #0779eb;
+        color: #ffffff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #08ec60;
+      }
+      
+      #membersList {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      #membersList li {
+        background-color: #e6f2ff;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+      }
+      </style>
+  <div class="container">
+    <!-- Registered Members Section -->
+    <div class="registered-members">
+      <h2>Registered Members</h2>
+      <ul id="membersList">
+        <!-- Registered members will appear here -->
+      </ul>
+    </div>
+
+    <!-- Registration Form Section -->
+    <div class="registration-form">
+      <h2>Register New Member</h2>
+      <form id="memberForm">
+        <label for="memberName">Member Name:</label>
+        <input type="text" id="memberName" name="memberName" required />
+
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required />
+
+        <label for="registrationDate">Date of Registration:</label>
+        <input type="date" id="registrationDate" name="registrationDate" required />
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
+        <button type="submit">Register Member</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="sc.js"></script>
+  <br>
+  <br>
+  <button><a href="admin.html" class="btnc" >Back</a> </button>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - TEAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: #a1d3f3;
+            color: #1f1616;
+            overflow-x: hidden;
+        }
+        
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: transparent;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav .logo {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        nav ul li a {
+            color: #ef4d4d;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #000;
+        }
+        
+        .hero {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+            padding: 60px 10%;
+            gap: 40px;
+        }
+        
+        .hero-text {
+            max-width: 600px;
+        }
+        
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .hero-text span {
+            color: #000;
+        }
+        
+        .hero-text p {
+            margin: 20px 0;
+            color: #c42b2b;
+        }
+        
+        .btn-download {
+            padding: 12px 24px;
+            background: #d177a0;
+            color: #000;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-weight: 600;
+        }
+        
+        .btn-download:hover {
+            background: #140014;
+        }
+        
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .social-icons a {
+            color: #6d4f30;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .hero-img {
+            border: 2px solid #466910;
+            border-radius: 50%;
+            padding: 8px;
+        }
+        
+        .hero-img img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        @media (min-width: 768px) {
+            .hero {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo" src="bgmp4.mp4" type="video/mp4"></video>
+    <nav>
+        <div class="logo">Portfolio.</div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>GARGI NANDI GOSWAMI<br>I'm a <span>Frontend + Backend Developer</span></h1>
+            <p></p>
+            <button class="btn-download"><a href="GargiCV.png">Download CV</a></button>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/12MZGBVWtG1/">FB</a>
+                <a href="#">TW</a>
+                <a href="#">LN</a>
+                <a href="#">GH</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="Gargi.png" alt="GARGI NANDI GOSWAMI">
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>PITAMBAR KUMAR LAL<br>I'm a <span>Frontend + App Developer</span></h1>
+            <p></p>
+            <button class="btn-download"><a href="PitambarCV.png">Download CV</a></button>
+            <div class="social-icons">
+                <a href="#">FB</a>
+                <a href="#">TW</a>
+                <a href="#">LN</a>
+                <a href="#">GH</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="Pitambar.png" alt="PITAMBAR KUMAR LAL">
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>SAMEER SHUKLA<br>I'm a <span>Frontend Developer</span></h1>
+            <p></p>
+            <button class="btn-download"><a href="SameerCV.png">Download CV</a></button>
+            <div class="social-icons">
+                <a href="#">FB</a>
+                <a href="#">TW</a>
+                <a href="#">LN</a>
+                <a href="#">GH</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="Sameer (1).png" alt="SAMEER SHUKLA">
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Puja Hansda<br>I'm a <span>Frontend Developer</span></h1>
+            <p></p>
+            <button class="btn-download"><a href="#">Download CV</a></button>
+            <div class="social-icons">
+                <a href="#">FB</a>
+                <a href="#">TW</a>
+                <a href="#">LN</a>
+                <a href="#">GH</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="#" alt="Puja Hansda">
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Adnan Aamir<br>I'm a <span>Backend Developer</span></h1>
+            <p></p>
+            <button class="btn-download"><a href="#">Download CV</a></button>
+            <div class="social-icons">
+                <a href="#">FB</a>
+                <a href="#">TW</a>
+                <a href="#">LN</a>
+                <a href="#">GH</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="" alt="Adnan Aamir">
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Aatish Rana<br>I'm a <span>Frontend + Backend Developer</span></h1>
+            <p></p>
+            <button class="btn-download"><a href="#">Download CV</a></button>
+            <div class="social-icons">
+                <a href="#">FB</a>
+                <a href="#">TW</a>
+                <a href="#">LN</a>
+                <a href="#">GH</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="#" alt="Aatish Rana">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>

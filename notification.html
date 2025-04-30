@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Notification</title>
+  
+</head>
+<body>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        background-image: url(aa.png);
+        padding: 20px;
+      }
+      
+      .notification {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        padding: 20px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        position: relative;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      }
+      
+      .notification .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+      .notification .closebtn:hover {
+        color: #000;
+      }
+      
+      .notification h2 {
+        margin-top: 0;
+      }
+      
+      .notification p {
+        margin: 5px 0;
+      }
+      
+      .member-name, .card-no, .reg-date {
+        font-weight: bold;
+      }
+      </style>
+  <div class="notification">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <h2>New Member Registered</h2>
+    <p><strong>Name:</strong> <span class="member-name">John Doe</span></p>
+    <p><strong>Card No:</strong> <span class="card-no">SR4567890</span></p>
+    <p><strong>Date of Registration:</strong> <span class="reg-date">April 20, 2025</span></p>
+  </div>
+  <br>
+  <br>
+  <button><a href="admin.html" class="btnc" >Back</a> </button>
+</body>
+</html>
